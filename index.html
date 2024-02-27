@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загадка по информатике</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Введите ваш код участника:</h1>
+        <input type="text" id="participantCode">
+        <button onclick="checkParticipantCode()">Войти</button>
+        <div id="riddleContainer" style="display: none;">
+            <h2>Ваша загадка:</h2>
+            <p id="riddle">Загадка по информатике</p>
+            <input type="text" id="answer" placeholder="Введите ваш ответ">
+            <button onclick="submitAnswer()">Ответить</button>
+        </div>
+    </div>
+	<form action="https://script.google.com/macros/s/AKfycbw1Eofyd8lIH4haU5yAExywAkRNs4ia0PATI0yeslhftzJw90K9Mxh2zqpedEdIX4I/exec" method="POST">
+  <label for="code">Код участника:</label><br>
+  <input type="text" id="code" name="code"><br>
+  <label for="answer">Ответ на загадку:</label><br>
+  <input type="text" id="answer" name="answer"><br><br>
+  <input type="submit" value="Отправить ответ">
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
